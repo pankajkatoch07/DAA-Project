@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Sorter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List Sorter</h1>
+        
+        <!-- Input form for tasks -->
+        <div class="task-input">
+            <input type="text" id="taskDescription" placeholder="Enter task description" required>
+            <input type="number" id="taskPriority" placeholder="Priority (1 = highest)" required min="1">
+            <button id="addTaskBtn">Add Task</button>
+        </div>
+
+        <!-- Display list of tasks -->
+        <h2>Your Tasks:</h2>
+        <ul id="taskList">
+        </ul>
+
+        <button id="sortBtn">Sort by Priority</button>
+
+         <h2>Sorted Tasks:</h2>
+        <ul id="sortedTaskList">
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
